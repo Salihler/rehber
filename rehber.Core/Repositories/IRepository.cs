@@ -8,7 +8,7 @@ namespace rehber.Core.Repositories
     public interface IRepository<TEntity> where TEntity : class
     {
         Task<IEnumerable<TEntity>> GetAllAsync();
-        Task<TEntity> GetByIdAsync();
+        Task<TEntity> GetByIdAsync(int id);
         Task AddAsync(TEntity entity);
         Task AddRangeAsync(IEnumerable<TEntity> entities);
         //Remove işlemleri Context tarafında async çalışmadığı için void kalmalı.
