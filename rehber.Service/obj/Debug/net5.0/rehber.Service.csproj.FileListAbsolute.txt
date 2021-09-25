@@ -1,0 +1,11 @@
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/bin/Debug/net5.0/rehber.Service.deps.json
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/bin/Debug/net5.0/rehber.Service.dll
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/bin/Debug/net5.0/ref/rehber.Service.dll
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/bin/Debug/net5.0/rehber.Service.pdb
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/obj/Debug/net5.0/rehber.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/obj/Debug/net5.0/rehber.Service.AssemblyInfoInputs.cache
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/obj/Debug/net5.0/rehber.Service.AssemblyInfo.cs
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/obj/Debug/net5.0/rehber.Service.csproj.CoreCompileInputs.cache
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/obj/Debug/net5.0/rehber.Service.dll
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/obj/Debug/net5.0/ref/rehber.Service.dll
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Service/obj/Debug/net5.0/rehber.Service.pdb
