@@ -2,7 +2,6 @@
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/bin/Debug/net5.0/rehber.Data.dll
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/bin/Debug/net5.0/ref/rehber.Data.dll
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/bin/Debug/net5.0/rehber.Data.pdb
-/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/obj/Debug/net5.0/rehber.Data.csproj.AssemblyReference.cache
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/obj/Debug/net5.0/rehber.Data.GeneratedMSBuildEditorConfig.editorconfig
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/obj/Debug/net5.0/rehber.Data.AssemblyInfoInputs.cache
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/obj/Debug/net5.0/rehber.Data.AssemblyInfo.cs
