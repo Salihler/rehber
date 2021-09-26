@@ -6,11 +6,18 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using rehber.Core.Repositories;
+using rehber.Core.Services;
+using rehber.Core.UnitOfWorks;
+using rehber.Data;
+using rehber.Data.Repositories;
+using rehber.Service.Services;
 
 namespace rehber.Api
 {
@@ -26,6 +33,15 @@ namespace rehber.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AppDbContext>(options => {
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection") o => o.MigrationsAssembly("rehber.Data"));
+            });
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IService<>), typeof(Service<>));
+            services.AddScoped<IContactService,ContactService>();
+            services.AddScoped<IContactInfoService,ContactInfoService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
