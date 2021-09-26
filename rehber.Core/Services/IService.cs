@@ -8,7 +8,7 @@ namespace rehber.Core.Services
     public interface IService<TEntity> where TEntity : class
     {
         Task<IEnumerable<TEntity>> GetAllAsync();
-        Task<TEntity> GetByIdAsync();
+        Task<TEntity> GetByIdAsync(int id);
         Task AddAsync(TEntity entity);
         Task AddRangeAsync(IEnumerable<TEntity> entities);
         void Remove(TEntity entity);
