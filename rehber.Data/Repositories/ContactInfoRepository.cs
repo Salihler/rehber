@@ -7,15 +7,15 @@ namespace rehber.Data.Repositories
 {
     public class ContactInfoRepository : Repository<ContactInfo>, IContactInfoRepository
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _dbContext;
         public ContactInfoRepository(AppDbContext dbContext) : base(dbContext)
         {
-            _context = dbContext;
+            _dbContext = dbContext;
         }
 
         public async Task<ContactInfo> GetWithContactByIdAsync(int infoId)
         {
-            return await _context.ContactInfos.Include(x => x.Contact).SingleOrDefaultAsync(x => x.Id == infoId);
+            return await _dbContext.ContactInfos.Include(x => x.Contact).SingleOrDefaultAsync(x => x.Id == infoId);
         }
     }
 }

@@ -1,10 +1,3 @@
-/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.csproj.AssemblyReference.cache
-/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.GeneratedMSBuildEditorConfig.editorconfig
-/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.AssemblyInfoInputs.cache
-/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.AssemblyInfo.cs
-/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.csproj.CoreCompileInputs.cache
-/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.MvcApplicationPartsAssemblyInfo.cs
-/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.MvcApplicationPartsAssemblyInfo.cache
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/bin/Debug/net5.0/appsettings.Development.json
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/bin/Debug/net5.0/appsettings.json
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Api.deps.json
@@ -30,6 +23,13 @@
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Core.pdb
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Data.pdb
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Service.pdb
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.csproj.AssemblyReference.cache
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.AssemblyInfoInputs.cache
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.AssemblyInfo.cs
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.csproj.CoreCompileInputs.cache
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.MvcApplicationPartsAssemblyInfo.cs
+/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.MvcApplicationPartsAssemblyInfo.cache
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/staticwebassets/rehber.Api.StaticWebAssets.Manifest.cache
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/staticwebassets/rehber.Api.StaticWebAssets.xml
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/scopedcss/bundle/rehber.Api.styles.css
