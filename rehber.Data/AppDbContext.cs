@@ -10,9 +10,14 @@ namespace rehber.Data
         {
         }
         
+        // DbSet'ler Veritabanımızda bulunan tablolara erişmek için kullanılır.
         public DbSet<Contact> Contacts {get; set;}
         public DbSet<ContactInfo> ContactInfos { get; set; }
 
+        /// <summary>
+        /// Oluşturduğumuz konfigürasyon dosyalarımızı, tablolar ilk oluştuğunda çalıştırmak için kullanılır.
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ContactConfiguration());

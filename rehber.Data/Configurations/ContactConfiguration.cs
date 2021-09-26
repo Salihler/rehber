@@ -4,8 +4,15 @@ using rehber.Core.Models;
 
 namespace rehber.Data.Configurations
 {
+    /// <summary>
+    /// Kişi kayıtları veritabanına kayıt edilirken, dikkate alması gereken önayarların belirtildiği sınıftır.
+    /// </summary>
     public class ContactConfiguration : IEntityTypeConfiguration<Contact>
     {
+        /// <summary>
+        /// Ön ayaların belirtilmesi için kullanılır.
+        /// </summary>
+        /// <param name="builder"></param>
         public void Configure(EntityTypeBuilder<Contact> builder)
         {
             builder.HasKey(x => x.Id);
