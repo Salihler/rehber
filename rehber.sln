@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rehber.Data", "rehber.Data\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rehber.Service", "rehber.Service\rehber.Service.csproj", "{24796BCE-D982-42F2-B71C-3DE30F4689CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rehber.Api", "rehber.Api\rehber.Api.csproj", "{A9708BA4-DD9B-4250-85E2-A5B758224FCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{24796BCE-D982-42F2-B71C-3DE30F4689CA}.Release|x64.Build.0 = Release|Any CPU
 		{24796BCE-D982-42F2-B71C-3DE30F4689CA}.Release|x86.ActiveCfg = Release|Any CPU
 		{24796BCE-D982-42F2-B71C-3DE30F4689CA}.Release|x86.Build.0 = Release|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Debug|x64.Build.0 = Debug|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Debug|x86.Build.0 = Debug|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Release|x64.ActiveCfg = Release|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Release|x64.Build.0 = Release|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Release|x86.ActiveCfg = Release|Any CPU
+		{A9708BA4-DD9B-4250-85E2-A5B758224FCA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
