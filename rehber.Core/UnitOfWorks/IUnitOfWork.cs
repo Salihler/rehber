@@ -5,9 +5,8 @@ namespace rehber.Core.UnitOfWorks
 {
     public interface IUnitOfWork
     {
-        //TODO:Repository instancelarda Yalnızca Get kullanılabilir.
-        IContactRepository Contacts{get; set;}
-        IContactInfoRepository ContactInfos { get; set; }
+        IContactRepository Contacts{get;}
+        IContactInfoRepository ContactInfos { get;}
         Task SaveAsync();
         void Save();
     }
