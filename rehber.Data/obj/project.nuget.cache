@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L2RpJV5zhYS8VREAo7pqu1+4k3/PJ9ySwxBK37d8o0B3Ph1MUU+8igsVozQ1kSAfxBm6953roB0tdZv8lYju6w==",
+  "dgSpecHash": "3hX0g6ZTOAhAEPf9fkdfT/mQREg93e/JdtGK9un/L6KxTu+A2BRRHmCRp14hZFBsP/4oT1cLL0SdCbRYtBNmiQ==",
   "success": true,
   "projectFilePath": "/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/rehber.Data.csproj",
   "expectedPackageFiles": [
@@ -20,9 +20,12 @@
     "/Users/erensalihler/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "/Users/erensalihler/.nuget/packages/npgsql/5.0.0/npgsql.5.0.0.nupkg.sha512",
+    "/Users/erensalihler/.nuget/packages/npgsql.entityframeworkcore.postgresql/5.0.0/npgsql.entityframeworkcore.postgresql.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/system.collections.immutable/5.0.0/system.collections.immutable.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "/Users/erensalihler/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+    "/Users/erensalihler/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "/Users/erensalihler/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }

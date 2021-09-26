@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using rehber.Core.Models;
+using rehber.Data.Configurations;
 
 namespace rehber.Data
 {
@@ -11,5 +12,11 @@ namespace rehber.Data
         
         public DbSet<Contact> Contacts {get; set;}
         public DbSet<ContactInfo> ContactInfos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new ContactConfiguration());
+            modelBuilder.ApplyConfiguration(new ContactInfoConfiguration());
+        }
     }
 }
