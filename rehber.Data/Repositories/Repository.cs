@@ -10,10 +10,10 @@ namespace rehber.Data.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private readonly DbContext _context;
+        protected readonly DbContext _context;
         private readonly DbSet<TEntity> _dbSet;
 
-        public Repository(DbContext dbContext)
+        public Repository(AppDbContext dbContext)
         {
             _context = dbContext;
             _dbSet = _context.Set<TEntity>();

@@ -17,6 +17,7 @@ using rehber.Core.Services;
 using rehber.Core.UnitOfWorks;
 using rehber.Data;
 using rehber.Data.Repositories;
+using rehber.Data.UnitOfWorks;
 using rehber.Service.Services;
 
 namespace rehber.Api
@@ -34,7 +35,8 @@ namespace rehber.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options => {
-                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection") o => o.MigrationsAssembly("rehber.Data"));
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"), o => 
+                o.MigrationsAssembly("rehber.Data"));
             });
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));

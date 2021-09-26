@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3hX0g6ZTOAhAEPf9fkdfT/mQREg93e/JdtGK9un/L6KxTu+A2BRRHmCRp14hZFBsP/4oT1cLL0SdCbRYtBNmiQ==",
+  "dgSpecHash": "boEiBc8QOpg4WHcVPoTO3QJW08F/h397bqLx/xOI+f+IVCNdgmz38pIz4jdowES2owHFC5r0dPSbYalXazZSkg==",
   "success": true,
   "projectFilePath": "/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/rehber.Data.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "/Users/erensalihler/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.0/microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/microsoft.entityframeworkcore.design/5.0.0/microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.0/microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
+    "/Users/erensalihler/.nuget/packages/microsoft.entityframeworkcore.tools/5.0.0/microsoft.entityframeworkcore.tools.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/microsoft.extensions.caching.memory/5.0.0/microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "/Users/erensalihler/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
