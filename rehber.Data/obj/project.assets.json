@@ -873,19 +873,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/erensalihler/.nuget/packages/": {}
+    "/home/salihler/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/rehber.Data.csproj",
+      "projectUniqueName": "/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Data/rehber.Data.csproj",
       "projectName": "rehber.Data",
-      "projectPath": "/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/rehber.Data.csproj",
-      "packagesPath": "/Users/erensalihler/.nuget/packages/",
-      "outputPath": "/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Data/obj/",
+      "projectPath": "/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Data/rehber.Data.csproj",
+      "packagesPath": "/home/salihler/.nuget/packages/",
+      "outputPath": "/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/erensalihler/.nuget/NuGet/NuGet.Config"
+        "/home/salihler/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -897,8 +897,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Core/rehber.Core.csproj": {
-              "projectPath": "/Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Core/rehber.Core.csproj"
+            "/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/rehber.Core.csproj": {
+              "projectPath": "/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/rehber.Core.csproj"
             }
           }
         }
@@ -961,7 +961,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }
