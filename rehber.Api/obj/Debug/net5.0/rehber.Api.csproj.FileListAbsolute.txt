@@ -48,6 +48,8 @@
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Api.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/ref/rehber.Api.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Api.pdb
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/AutoMapper.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Humanizer.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
