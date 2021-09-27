@@ -33,13 +33,16 @@ namespace rehber.Data
 
             foreach (var entity in entities)
             {
-                var now = DateTime.UtcNow; // current datetime
+                var now = DateTime.Now;
 
                 if (entity.State == EntityState.Added)
                 {
                     ((BaseEntity)entity.Entity).CreatedAt = now;
                 }
-                ((BaseEntity)entity.Entity).UpdatedAt = now;
+                else
+                {
+                    ((BaseEntity)entity.Entity).UpdatedAt = now;
+                }
             }
         }
     }

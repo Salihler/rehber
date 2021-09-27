@@ -36,8 +36,7 @@ namespace rehber.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options => {
-                var conf = Configuration.GetConnectionString("DefaultConnection");
-                options.UseNpgsql(conf, o => 
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"), o => 
                 o.MigrationsAssembly("rehber.Data"));
             });
             

@@ -5,6 +5,11 @@ namespace rehber.Core.DTOs
     public class ContactInfoDto
     {
         /// <summary>
+        /// İletişim Bilgisi Id.
+        /// </summary>
+        public int Id { get; set; }
+        
+        /// <summary>
         /// Kişiye ait telefon numarası
         /// </summary>
         [Required(ErrorMessage = "{0} alanı gereklidir")]
@@ -25,5 +30,7 @@ namespace rehber.Core.DTOs
         /// <summary>
         /// Kişinin ID'si
         /// </summary>
+        [Required(ErrorMessage = "{0} kişi ID belirtilmesi zorunludur")]
+        public int ContactId { get; set; }
     }
 }
