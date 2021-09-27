@@ -40,6 +40,16 @@ namespace rehber.Api
                 o.MigrationsAssembly("rehber.Data"));
             });
             
+            if (Configuration["cacheProvider"] == "Redis")
+            {
+                services.AddStackExchangeRedisCache(action =>
+                {
+
+                    action.Configuration = Configuration.GetConnectionString("redis");
+                }
+                );
+            }
+
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IService<>), typeof(Service<>));

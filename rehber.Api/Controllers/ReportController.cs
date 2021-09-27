@@ -25,21 +25,29 @@ namespace rehber.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-
-            var contact = await _contactService.GetAllAsync();
-            var infos = await _cInfoService.GetAllAsync();
-
-            List<string> locations = infos.Select(l => l.Location).Distinct().ToList();
-
-            foreach (var location in locations)
+            try
             {
-                ReportList.Add(new Report {
-                    Contacts = infos.Where(x => x.Location == location && x.ContactId != 0).Select(x => x.ContactId).Count(),
-                    Location = location,
-                    PhoneNumbers = infos.Where(x => x.Location == location && !string.IsNullOrEmpty(x.Phone)).Select(x => x.Phone).Count()
-                });
+                var contact = await _contactService.GetAllAsync();
+                var infos = await _cInfoService.GetAllAsync();
+
+                //Rapor Lokasyon odaklı olduğu için, Veritabanındaki tüm lokasyonları veri tekrarlarını teke düşürerek getirip, listeye atama.
+                List<string> locations = infos.Select(l => l.Location).Distinct().ToList();
+
+                foreach (var location in locations)
+                {
+                    //Telefon numaraları ve Contact sayısını lokasyon baz alarak hesaplatıp, rapor listesine ekleme.
+                    ReportList.Add(new Report {
+                        Contacts = infos.Where(x => x.Location == location && x.ContactId != 0).Select(x => x.ContactId).Count(),
+                        Location = location,
+                        PhoneNumbers = infos.Where(x => x.Location == location && !string.IsNullOrEmpty(x.Phone)).Select(x => x.Phone).Count()
+                    });
+                }
+                return Ok(ReportList);
             }
-            return Ok(ReportList);
+            catch (System.Exception e)
+            {
+                return BadRequest(e);
+            }
         }
     }
 }

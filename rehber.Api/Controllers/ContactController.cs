@@ -1,7 +1,12 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
 using rehber.Core.DTOs;
 using rehber.Core.Models;
 using rehber.Core.Services;
@@ -12,27 +17,61 @@ namespace rehber.Api.Controllers
     public class ContactController : Controller
     {
         private readonly IContactService _service;
+        private readonly IDistributedCache _distrubutedCache;
         private readonly IMapper _mapper;
 
-        public ContactController(IContactService service,IMapper mapper)
+        public ContactController(IContactService service,IMapper mapper, IDistributedCache distributedCache)
         {
             _service = service;
+            _distrubutedCache = distributedCache;
             _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var contacts = await _service.GetAllAsync();
-            return Ok(_mapper.Map<IEnumerable<ContactDto>>(contacts));
+            try
+            {
+                var contacts = await _service.GetAllAsync();
+                return Ok(_mapper.Map<IEnumerable<ContactDto>>(contacts.OrderBy(x => x.Id)));
+            }
+            catch (System.Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
+            Contact contact;
+
+            string cacheJsonItem;
+
             try
             {
-                var contact = await _service.GetByIdAsync(id);
+                var contactsOnCache = await _distrubutedCache.GetAsync(id.ToString());
+
+                if (contactsOnCache != null)
+                {
+                    cacheJsonItem = Encoding.UTF8.GetString(contactsOnCache);
+                    contact = JsonConvert.DeserializeObject<Contact>(cacheJsonItem);
+                }
+                else
+                {
+                    contact = await _service.GetByIdAsync(id);
+
+                    cacheJsonItem = JsonConvert.SerializeObject(contact);
+
+                    contactsOnCache = Encoding.UTF8.GetBytes(cacheJsonItem);
+
+                    var options = new DistributedCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromDays(1))
+                    .SetAbsoluteExpiration(DateTime.Now.AddMonths(1));
+
+                    await _distrubutedCache.SetAsync(id.ToString(), contactsOnCache, options);
+                }
+
                 return Ok(_mapper.Map<ContactDto>(contact));
             }
             catch (System.Exception e)
@@ -44,8 +83,15 @@ namespace rehber.Api.Controllers
         [HttpGet("{id}/infos")]
         public async Task<IActionResult> GetWithInfos(int id)
         {
-            var contactWithInfos = await _service.GetWithInfosByIdAsync(id);
-            return (Ok(_mapper.Map<ContactWithInfosDto>(contactWithInfos)));
+            try
+            {
+                var contactWithInfos = await _service.GetWithInfosByIdAsync(id);
+                return (Ok(_mapper.Map<ContactWithInfosDto>(contactWithInfos)));
+            }
+            catch (System.Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         [HttpPost]

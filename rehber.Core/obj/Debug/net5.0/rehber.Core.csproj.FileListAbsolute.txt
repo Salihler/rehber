@@ -13,7 +13,6 @@
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/bin/Debug/net5.0/rehber.Core.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/bin/Debug/net5.0/ref/rehber.Core.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/bin/Debug/net5.0/rehber.Core.pdb
-/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/obj/Debug/net5.0/rehber.Core.csproj.AssemblyReference.cache
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/obj/Debug/net5.0/rehber.Core.GeneratedMSBuildEditorConfig.editorconfig
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/obj/Debug/net5.0/rehber.Core.AssemblyInfoInputs.cache
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/obj/Debug/net5.0/rehber.Core.AssemblyInfo.cs
@@ -21,3 +20,4 @@
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/obj/Debug/net5.0/rehber.Core.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/obj/Debug/net5.0/ref/rehber.Core.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/obj/Debug/net5.0/rehber.Core.pdb
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Core/obj/Debug/net5.0/rehber.Core.csproj.AssemblyReference.cache

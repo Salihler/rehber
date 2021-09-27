@@ -41,6 +41,7 @@
 /Users/erensalihler/Desktop/projects/dotnetCoreProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.genruntimeconfig.cache
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/appsettings.Development.json
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/appsettings.json
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/mono_crash.21acb2c4bb.0.json
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Api
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Api.deps.json
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Api.runtimeconfig.json
@@ -55,12 +56,20 @@
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.OpenApi.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Npgsql.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Pipelines.Sockets.Unofficial.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/StackExchange.Redis.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/System.Diagnostics.PerformanceCounter.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Core.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Data.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/rehber.Service.dll
@@ -83,3 +92,4 @@
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/obj/Debug/net5.0/ref/rehber.Api.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.pdb
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.genruntimeconfig.cache
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Newtonsoft.Json.dll
