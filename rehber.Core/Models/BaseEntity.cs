@@ -15,5 +15,9 @@ namespace rehber.Core.Models
         /// Oluşturulma tarihi
         /// </summary>
         public DateTime CreatedAt { get; set; }
+        /// <summary>
+        /// Güncellenme tarihi
+        /// </summary>
+        public DateTime UpdatedAt { get; set; }
     }
 }

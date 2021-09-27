@@ -21,11 +21,13 @@ namespace rehber.Data.UnitOfWorks
         }
         public void Save()
         {
+            _context.AddTimestamps();
             _context.SaveChanges();
         }
 
         public async Task SaveAsync()
         {
+            _context.AddTimestamps();
             await _context.SaveChangesAsync();
         }
     }
