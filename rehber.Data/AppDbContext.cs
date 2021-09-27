@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using rehber.Core.Models;
 using rehber.Data.Configurations;
+using rehber.Data.Seeds;
 
 namespace rehber.Data
 {
@@ -24,6 +25,8 @@ namespace rehber.Data
         {
             modelBuilder.ApplyConfiguration(new ContactConfiguration());
             modelBuilder.ApplyConfiguration(new ContactInfoConfiguration());
+            modelBuilder.ApplyConfiguration(new ContactSeeds(Enumerable.Range(1, 23).ToArray()));
+            modelBuilder.ApplyConfiguration(new ContactInfoSeeds(Enumerable.Range(1, 23).ToArray()));
         }
 
         public void AddTimestamps()
