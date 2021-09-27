@@ -13,34 +13,33 @@ namespace rehber.Api.Controllers
         private readonly IContactService _contactService;
         private readonly IContactInfoService _cInfoService;
 
-        public List<string> locations = new List<string>();
-
-        public List<Report> Reports = new List<Report>();
-
-        private Report report = new Report();
+        public List<Report> ReportList { get; set; }
 
         public ReportController(IContactService contactService, IContactInfoService cInfoService)
         {
             _contactService = contactService;
             _cInfoService = cInfoService;
+            ReportList = new List<Report>();
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
+
             var contact = await _contactService.GetAllAsync();
             var infos = await _cInfoService.GetAllAsync();
 
-            locations = infos.Distinct().Select(l => l.Location).ToList();
+            List<string> locations = infos.Select(l => l.Location).Distinct().ToList();
 
             foreach (var location in locations)
             {
-                report.Contacts = infos.Where(x => x.Location == location).Select(x => x.ContactId).Count();
-                report.Location = location;
-                report.PhoneNumbers = infos.Where(x => x.Location == location).Select(x => x.Phone).Count();
-                Reports.Add(report);
+                ReportList.Add(new Report {
+                    Contacts = infos.Where(x => x.Location == location && x.ContactId != 0).Select(x => x.ContactId).Count(),
+                    Location = location,
+                    PhoneNumbers = infos.Where(x => x.Location == location && !string.IsNullOrEmpty(x.Phone)).Select(x => x.Phone).Count()
+                });
             }
-            return Ok(Reports);
+            return Ok(ReportList);
         }
     }
 }
