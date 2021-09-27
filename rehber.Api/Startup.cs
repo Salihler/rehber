@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,13 +39,16 @@ namespace rehber.Api
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"), o => 
                 o.MigrationsAssembly("rehber.Data"));
             });
-
+            
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IService<>), typeof(Service<>));
             services.AddScoped<IContactService,ContactService>();
             services.AddScoped<IContactInfoService,ContactInfoService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             services.AddControllers();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "rehber.Api", Version = "v1" });
