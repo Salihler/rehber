@@ -108,6 +108,20 @@ namespace rehber.Api.Controllers
             }
         }
 
+        [HttpPost("range/")]
+        public async Task<IActionResult> SaveRange([FromBody]List<ContactDto> contacts)
+        {
+            try
+            {
+                await _service.AddRangeAsync(_mapper.Map<IEnumerable<Contact>>(contacts));
+                return NoContent();
+            }
+            catch (System.Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
         [HttpPut]
         public ActionResult Update(ContactDto contactDto)
         {
@@ -134,6 +148,20 @@ namespace rehber.Api.Controllers
             {
                 var contact = _service.GetByIdAsync(id).Result;
                 _service.Remove(contact);
+                return NoContent();
+            }
+            catch (System.Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        [HttpDelete("range/")]
+        public IActionResult Remove([FromBody]List<ContactDto> contacts)
+        {
+            try
+            {
+                _service.RemoveRange(_mapper.Map<IEnumerable<Contact>>(contacts));
                 return NoContent();
             }
             catch (System.Exception e)

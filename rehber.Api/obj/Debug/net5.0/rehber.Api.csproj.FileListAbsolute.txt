@@ -58,6 +58,7 @@
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Microsoft.OpenApi.dll
+/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Newtonsoft.Json.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Npgsql.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Pipelines.Sockets.Unofficial.dll
@@ -92,4 +93,3 @@
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/obj/Debug/net5.0/ref/rehber.Api.dll
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.pdb
 /home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/obj/Debug/net5.0/rehber.Api.genruntimeconfig.cache
-/home/salihler/Desktop/projects/sideProjects/rehber/rehber.Api/bin/Debug/net5.0/Newtonsoft.Json.dll

@@ -48,7 +48,7 @@ namespace rehber.Data.Repositories
         }
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
-            _dbSet.RemoveRange();
+            _dbSet.RemoveRange(entities);
         }
         public TEntity Update(TEntity entity)
         {
